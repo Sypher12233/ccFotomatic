@@ -1,0 +1,642 @@
+/* Universal Styles */
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main-content .sign-up-section{
+  position: relative;
+  top: 5.3125rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: #ffffff;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  height: 5.3125em;
+  margin: auto 1.875rem;
+  font-family: "Roboto", sans-serif;
+}
+
+header .logo {
+  flex: 1;
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+
+}
+
+header nav ul {
+  display: flex;
+  color: #4a4a4a; 
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  font-family: 'Roboto';
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: .75rem;
+}
+
+@media only screen and (min-width: 1080px) {
+  header .mobile {
+  display: none;
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1124px) {
+
+  header .content {
+    height: 3rem;
+    width: 100%;
+  }
+
+  header .mobile {
+    display: block;
+    height: 3rem;
+    padding: 0rem 3rem;
+  }
+
+  .mobile .mobile-buttons {
+    display: none;
+  }
+
+  header .mobile ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+    border-radius: .25rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+
+  header .desktop{
+    display: none;
+  }
+
+  header .content {
+    height: 3rem;
+    width: 100%;
+    margin: 0rem;
+    /* padding: .5rem 0; */
+  }
+
+  header .mobile {
+    display: block;
+    height: 3rem;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+
+  header .mobile .button {
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    line-height: 1.6;
+    color: white;
+    border-radius: .25rem;
+  }
+}
+
+/* Sign Up Section */
+
+#sign-up-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+#sign-up-cta {
+  padding: 0 5rem 2.5rem 5rem;
+  margin: 10.625rem 0 6.25rem 9rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+}
+
+#sign-up-cta .content {
+  width: 25.625rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+#sign-up-cta h1 {
+  font-size: 2.8rem;
+}
+
+#sign-up-cta h2 {
+  font-size: 2.25rem;
+}
+
+#sign-up-cta .span .strong {
+  font-weight: bold;
+}
+
+#sign-up-cta .cursive {
+  font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: .75rem;
+}
+
+#sign-up-cta .button {
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1124px) {
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #sign-up-cta {
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    padding: 0rem;
+    margin: 0rem;
+  }
+
+  #sign-up-cta .content {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    align-items: center;
+  }
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.5rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #sign-up-cta {
+    margin: 0rem;
+    padding: 0rem;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+  }
+  
+  #sign-up-section .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: space-around;
+  }
+  
+  #sign-up-section {
+    align-items: center;
+    justify-content: center;
+    height: 28rem;
+  }
+
+  #sign-up-cta .email {
+    display: none;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.5rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Features Section */
+
+#features-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 5%;
+  width: inherit;
+  height: 38.5rem;
+  background-color: #f3f3f3;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem;
+  margin: 0 1.25rem;
+  background-color: white;
+  height: 32.6875rem;
+  width: 50%;
+}
+
+.feature .center{
+  height: 100%;
+  width: 100%;
+}
+
+.feature .image-container {
+  background-image: url('../images/feature-1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+
+.feature .image-container .img2 {
+  background-image: url('../images/feature-2.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#img{
+  background-image: url('../images/feature-2.png');
+}
+
+.feature h2 {
+  color: #4a4a4a;
+  font-size: 2.25rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  line-height: 1.2rem;
+  padding-top: 1.5rem;
+}
+
+.feature h3 {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1124px) {
+  #features-section {
+    padding: 1.5rem .5rem;
+    height: 32.5rem;
+  }
+
+  .feature {
+    margin: 0rem .5rem;
+    padding: 0rem;
+  }
+
+  .feature .image-container {
+    background-size: cover;
+    margin: 1rem;
+    height: 60%;
+  }
+
+  .feature .center .content {
+    padding: 0rem 1rem;
+    text-align: left;
+  }
+
+  .feature .center .content h2 {
+    line-height: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #features-section {
+    flex-flow: column;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 44rem;
+  }
+
+  #features-section .feature {
+    margin: 0rem;
+    display: flex;
+    padding: 1.25rem 1rem 1.875rem 1rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  
+  .feature .center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .feature .image-container {
+    height: 80%;
+    background-size: cover;
+  }
+
+  .feature .content {
+    width: 75%;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+  }
+}
+/* Filters Section */
+
+#filters-section {
+  padding: 4rem 0;
+  background-color: #4a4a4a;
+}
+
+#filters-section .content {
+  padding: 3rem .625rem;
+  
+}
+
+#filters-section .content h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+#filters-section .content h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+}
+
+#filters-section .images-container {
+  max-width: 100%;
+  padding: 0 1%;
+  display: flex;
+  height: 20rem;
+}
+
+#filters-section .img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25%;
+}
+
+#filters-section .image-container1{
+  background-image: url(../images/filter-1.png);
+  
+}
+
+#filters-section .image-container2 {
+  background-image: url(../images/filter-2.png);
+  
+}
+
+#filters-section .image-container3 {
+  background-image: url(../images/filter-3.png);
+  
+}
+
+#filters-section .image-container4 {
+  background-image: url(../images/filter-4.png);
+  
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1124px) {
+  #filters-section {
+    padding: 0rem;
+  }
+  
+  #filters-section .content {
+    margin: 0rem;
+    padding: 4rem 3rem;
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+    height: 11rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #filters-section {
+    padding: 1.5rem 0 0 0;
+  }
+
+  #filters-section .content {
+    margin-bottom: 1rem;
+  }
+
+  #filters-section .content h2 {
+    padding-bottom: .625rem;
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: normal;
+  }
+
+  #filters-section .content h3 {
+    font-size: .875rem;
+    line-height: 1.4;
+    margin: 0rem 2rem 0rem 2rem;
+  }
+
+  #filters-section .images-container {
+    padding: 0;
+    align-content: center;
+    height: 7rem;
+  }
+
+  #filters-section .image-container4 {
+    display: none;
+    
+  }
+
+  #filters-section .img {
+    width: 30%;
+    padding: 0rem 10% 0rem 10%;
+  }
+}
+/* Quotes Section */
+
+#quotes-section {
+  background-color: #f3f3f3;
+  padding: 3rem;
+  height: 6rem;
+}
+
+#quotes-section .content {
+  padding: 2rem;
+}
+
+#quotes-section .quote {
+  color: #4a4a4a;
+  font-family: "Damion";
+  font-style: italic;
+  line-height: 1.1;
+  font-size: 1.875rem;
+  padding-right: 1.875rem;
+}
+
+#quotes-section .quote-citation {
+  height: 1.875rem;
+}
+
+@media only screen and (min-width: 451px) and (max-width: 1124px) {
+  #quotes-section {
+    padding: 3rem 0rem;
+  }
+  #quotes-section .content {
+    padding: 0rem 2rem;
+    display: inline-flex;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #quotes-section {
+    padding: 0rem;
+    height: auto;
+  }
+
+  #quotes-section content {
+    padding: 1.875rem .625rem;
+
+  }
+
+  #quotes-section .quote {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #quotes-section .quote-citation {
+    display: block;
+    padding-top: 1rem;
+    margin: auto;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-size: 1rem;
+  font-family: "Roboto", regular;
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 1124px) {
+  footer .content {
+    font-size: .8rem;
+    font-family: inherit;
+    font-weight: 300;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  footer .content {
+    font-size: .625rem;
+  }
+}
